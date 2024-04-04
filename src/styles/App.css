@@ -11,3 +11,9 @@ h1.in-main {
     text-align: center;
     color: darkblue;
 }
+
+div .some-button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
