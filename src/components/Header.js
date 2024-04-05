@@ -1,14 +1,14 @@
 import React from "react";
 import "../styles/Header.css";
 
-class Header extends React.Component {
-  render() {
-    return (
-      <header>
-        <span className="in-header">This is a Header!</span>
-      </header>
-    );
-  }
+function Header(props) {
+  return (
+    <header>
+      <span className="in-header" onClick={props.handle}>
+        {props.title}
+      </span>
+    </header>
+  );
 }
 
 export default Header;

@@ -2,6 +2,10 @@ import React from "react";
 import "../styles/App.css";
 import Header from "./Header";
 
+const sayHello = (e) => {
+  console.log("Hello");
+};
+
 // переход от классового представления к фукнциональному
 function App() {
   let buttonName = "Any key";
@@ -14,7 +18,7 @@ function App() {
 
   return (
     <React.Fragment>
-      <Header />
+      <Header title="React" handle={sayHello} />
       <main>
         <div>
           <h1 className="in-main">Press any key</h1>
